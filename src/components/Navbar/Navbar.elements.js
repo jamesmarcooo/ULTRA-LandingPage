@@ -15,13 +15,13 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
-// export const NavbarContainer = styled(Container)`
-//   display: flex;
-//   justify-content: space-between;
-//   height: 80px;
+export const NavbarContainer = styled(Container)`
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
 
-//   ${Container}
-// `;
+  ${Container}
+`;
 
 // export const NavLogo = styled(Link)`
 //   color: #fff;
