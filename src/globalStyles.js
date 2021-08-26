@@ -23,6 +23,15 @@ export const NavbarContainer = styled(Container)`
   ${Container}
 `;
 
+export const NavLogo = styled(Link)`
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+`;
 
 
 
