@@ -88,5 +88,14 @@ export const NavItem = styled.li`
   }
 `;
 
+export const NavItemBtn = styled.li`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+`;
 
 
