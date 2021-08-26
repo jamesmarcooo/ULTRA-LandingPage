@@ -33,6 +33,9 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `;
 
+export const NavIcon = styled(FaMagento)`
+  margin-right: 0.5rem;
+`;
 
 
 
