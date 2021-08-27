@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 import { Nav, 
          NavbarContainer,
          NavLogo,
-         NavIcon } from './Navbar.elements';
+         NavIcon,
+         MobileIcon } from './Navbar.elements';
 
 
 
@@ -12,26 +15,28 @@ function Navbar() {
 
     //MobileIcon
     //function that updates the status of the click, and toggles the button
-    const handleClick = () => setClick(!click) { //starts the setClick fxn as unclicked
-
-    }
+    const handleClick = () => setClick(!click) //starts the setClick fxn as unclicked
+        
+    
 
 
 
 
     return (
         <>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo to='/'>
-                        <NavIcon />
-                        ULTRA
-                    </NavLogo>
-                    {<MobileIcon onClick = {handleClick}> {/*uses the handleClick fxn */}
-                        {click ? <FaTimes /> : <FaBars />}
-                    </MobileIcon> }
-                </NavbarContainer>
-            </Nav>
+            <IconContext.Provider value={{ color: '#fff' }}>        {/*turns the mobile icon (burger) into white*/}
+                <Nav>
+                    <NavbarContainer>
+                        <NavLogo to='/'>
+                            <NavIcon />
+                            ULTRA
+                        </NavLogo>
+                        <MobileIcon onClick = {handleClick}>        {/*uses the handleClick fxn */}
+                            {click ? <FaTimes /> : <FaBars />}      {/*set the icon depending on the status click */}
+                        </MobileIcon> 
+                    </NavbarContainer>
+                </Nav>
+            </IconContext.Provider>
         </>
     )
 }
