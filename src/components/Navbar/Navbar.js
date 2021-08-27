@@ -14,6 +14,9 @@ function Navbar() {
                         <NavIcon />
                         ULTRA
                     </NavLogo>
+                    {/* <MobileIcon>
+                        {click ? <FaTimes /> : <FaBars />}
+                    </MobileIcon> */}
                 </NavbarContainer>
             </Nav>
         </>
