@@ -1,12 +1,19 @@
 import React from 'react';
-import { Nav, NavbarContainer } from './Navbar.elements';
+import { Nav, 
+         NavbarContainer,
+         NavLogo,
+         NavIcon } from './Navbar.elements';
+
 
 function Navbar() {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    hatdog
+                    <NavLogo to='/'>
+                        <NavIcon />
+                        ULTRA
+                    </NavLogo>
                 </NavbarContainer>
             </Nav>
         </>
