@@ -5,7 +5,10 @@ import { Nav,
          NavbarContainer,
          NavLogo,
          NavIcon,
-         MobileIcon } from './Navbar.elements';
+         MobileIcon,
+         NavMenu,
+         NavItem,
+         NavLinks } from './Navbar.elements';
 
 
 
@@ -34,6 +37,20 @@ function Navbar() {
                             <NavItem>
                                 <NavLinks to='/'>
                                     Home
+                                </NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                        <NavMenu onClick={handleClick}>
+                            <NavItem>
+                                <NavLinks to='/services'>
+                                    Services
+                                </NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                        <NavMenu onClick={handleClick}>
+                            <NavItem>
+                                <NavLinks to='/products'>
+                                    Products
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

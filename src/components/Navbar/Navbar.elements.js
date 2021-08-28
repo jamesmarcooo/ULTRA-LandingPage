@@ -98,26 +98,26 @@ export const NavItem = styled.li`
 //   }
 // `;
 
-// export const NavLinks = styled(Link)`
-//   color: #fff;
-//   display: flex;
-//   align-items: center;
-//   text-decoration: none;
-//   padding: 0.5rem 1rem;
-//   height: 100%;
+export const NavLinks = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
 
-//   @media screen and (max-width: 960px) {
-//     text-align: center;
-//     padding: 2rem;
-//     width: 100%;
-//     display: table;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
 
-//     &:hover {
-//       color: #4b59f7;
-//       transition: all 0.3s ease;
-//     }
-//   }
-// `;
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
+  }
+`;
 
 // export const NavBtnLink = styled(Link)`
 //   display: flex;
