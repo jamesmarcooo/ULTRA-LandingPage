@@ -18,10 +18,6 @@ function Navbar() {
     const handleClick = () => setClick(!click) //starts the setClick fxn as unclicked
         
     
-
-
-
-
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>        {/*turns the mobile icon (burger) into white*/}
@@ -34,6 +30,13 @@ function Navbar() {
                         <MobileIcon onClick = {handleClick}>        {/*uses the handleClick fxn */}
                             {click ? <FaTimes /> : <FaBars />}      {/*set the icon depending on the status click */}
                         </MobileIcon> 
+                        <NavMenu onClick={handleClick}>
+                            <NavItem>
+                                <NavLinks to='/'>
+                                    Home
+                                </NavLinks>
+                            </NavItem>
+                        </NavMenu>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
