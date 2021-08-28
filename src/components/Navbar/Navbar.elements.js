@@ -71,22 +71,22 @@ export const NavMenu = styled.ul`
   }
 `;
 
-// export const NavItem = styled.li`
-//   height: 80px;
-//   border-bottom: 2px solid transparent;
+export const NavItem = styled.li`
+  height: 80px;
+  border-bottom: 2px solid transparent;
 
-//   &:hover {
-//     border-bottom: 2px solid #4b59f7;
-//   }
+  &:hover {
+    border-bottom: 2px solid #4b59f7;
+  }
 
-//   @media screen and (max-width: 960px) {
-//     width: 100%;
+  @media screen and (max-width: 960px) {
+    width: 100%;
 
-//     &:hover {
-//       border: none;
-//     }
-//   }
-// `;
+    &:hover {
+      border: none;
+    }
+  }
+`;
 
 // export const NavItemBtn = styled.li`
 //   @media screen and (max-width: 960px) {
