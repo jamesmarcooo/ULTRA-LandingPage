@@ -33,26 +33,36 @@ function Navbar() {
                         <MobileIcon onClick = {handleClick}>        {/*uses the handleClick fxn */}
                             {click ? <FaTimes /> : <FaBars />}      {/*set the icon depending on the status click */}
                         </MobileIcon> 
-                        <NavMenu onClick={handleClick}>
+                        <NavMenu onClick={handleClick} click={click}>
+                            {/* Home button */}
                             <NavItem>
                                 <NavLinks to='/'>
                                     Home
                                 </NavLinks>
                             </NavItem>
-                        </NavMenu>
-                        <NavMenu onClick={handleClick}>
+
+                            {/* Services button */}
                             <NavItem>
                                 <NavLinks to='/services'>
                                     Services
                                 </NavLinks>
                             </NavItem>
-                        </NavMenu>
-                        <NavMenu onClick={handleClick}>
+
+                            {/* Products */}
                             <NavItem>
                                 <NavLinks to='/products'>
                                     Products
                                 </NavLinks>
                             </NavItem>
+
+                            {/* Naviten button */}
+                            <NavItemBtn>
+                                {button ? (
+                                    <NavBtnLink to="/sign-up">
+                                        <Button primary>SIGN UP</Button>
+                                    </NavBtnLink>
+                                )}
+                            </NavItemBtn>
                         </NavMenu>
                     </NavbarContainer>
                 </Nav>
